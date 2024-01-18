@@ -1,0 +1,37 @@
+.typewriter {
+    width: 0;
+    /* Ensures the content is not revealed until the animation */
+    overflow: hidden;
+    /* The typwriter cursor */
+    border-right: .15em solid #ffb86c;
+    /* Keeps the content on a single line */
+    white-space: nowrap;
+    /* Adjust as needed */
+    letter-spacing: .15em;
+    animation:
+        0.5s steps(8, end) 2.5s forwards typing,
+        1s step-end 0s infinite blink-caret;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 7ch;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #ffb86c;
+    }
+}
