@@ -5,8 +5,7 @@
 }
 
 .response h1 {
-    @apply bg-purple;
-    display: inline-block;
+    @apply bg-purple inline-block;
     padding: 0 1ch;
     margin-bottom: 1lh;
     font-weight: 700;
@@ -18,4 +17,12 @@
 
 .response a {
     @apply text-cyan;
+}
+
+.response a:hover {
+    @apply text-blue
+}
+
+.response ul {
+    @apply list-disc list-inside mb-[1lh];
 }
