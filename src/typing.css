@@ -1,9 +1,3 @@
-.caret {
-    /* The typwriter cursor */
-    border-right: .15em solid #ffb86c;
-    animation: 1s step-end 0s infinite blink-caret;
-}
-
 .typewriter {
     width: 0;
     /* Ensures the content is not revealed until the animation */

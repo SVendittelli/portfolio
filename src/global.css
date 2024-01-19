@@ -1,3 +1,4 @@
+@import "./glow.css";
 @import "./typing.css";
 
 @tailwind base;
@@ -20,25 +21,4 @@
     transition-duration: 1ms !important;
     transition-delay: 1ms !important;
   }
-}
-
-.response {
-  margin: 1lh 2ch;
-  max-width: 80ch;
-}
-
-.response h1 {
-  display: inline-block;
-  background-color: #bd93f9;
-  padding: 0 1ch;
-  margin-bottom: 1lh;
-  font-weight: 700;
-}
-
-.response p {
-  margin-bottom: 1lh;
-}
-
-.response a {
-  color: #8be9fd;
 }

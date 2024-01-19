@@ -1,0 +1,21 @@
+/* We use apply here as the html is generated without classes */
+.response {
+    margin: 1lh 2ch;
+    max-width: 80ch;
+}
+
+.response h1 {
+    @apply bg-purple;
+    display: inline-block;
+    padding: 0 1ch;
+    margin-bottom: 1lh;
+    font-weight: 700;
+}
+
+.response p {
+    @apply mb-[1lh]
+}
+
+.response a {
+    @apply text-cyan;
+}
