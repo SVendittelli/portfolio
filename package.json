@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "css": "npx tailwindcss -i ./styles/global.css -o ./public/global.css --minify",
-    "dev": "npx tailwindcss -i ./styles/global.css -o ./public/global.css --watch"
+    "css": "tailwindcss -i ./src/global.css -o ./public/global.css --minify",
+    "dev": "tailwindcss -i ./src/global.css -o ./public/global.css --watch"
   },
   "devDependencies": {
     "tailwind-dracula": "1.1.0",

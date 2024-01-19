@@ -1,9 +1,0 @@
-@import "./typing.css";
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-* {
-  font-family: "Ubuntu Mono", monospace;
-}

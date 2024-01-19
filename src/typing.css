@@ -1,3 +1,9 @@
+.caret {
+    /* The typwriter cursor */
+    border-right: .15em solid #ffb86c;
+    animation: 1s step-end 0s infinite blink-caret;
+}
+
 .typewriter {
     width: 0;
     /* Ensures the content is not revealed until the animation */
@@ -6,21 +12,34 @@
     border-right: .15em solid #ffb86c;
     /* Keeps the content on a single line */
     white-space: nowrap;
-    /* Adjust as needed */
-    letter-spacing: .15em;
     animation:
-        0.5s steps(8, end) 2.5s forwards typing,
-        1s step-end 0s infinite blink-caret;
+        0.5s steps(16, end) 2.5s forwards typing,
+        1s step-end 0s 4 forwards blink-caret;
+}
+
+.fade {
+    opacity: 0;
+    animation: 0.5s linear 4s forwards fade;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* The typing effect */
 @keyframes typing {
     from {
-        width: 0;
+        width: .15em;
     }
 
     to {
-        width: 7ch;
+        width: calc(16ch + .15em);
     }
 }
 
