@@ -12,8 +12,8 @@
    </div>
    <div class="content-start text-purple">~</div>
    <div>$</div>
-   <form hx-post="/command" hx-target="#response" hx-swap="innerHTML">
-      <input name="text" class="bg-transparent flex-grow caret-orange focus:outline-none" type="text" autofocus placeholder="ls" />
+   <form class="flex-grow" hx-post="/command" hx-target="#response" hx-swap="innerHTML">
+      <input name="text" class="bg-transparent w-full caret-orange focus:outline-none" type="text" autofocus placeholder="ls" />
    </form>
 </div>
 <div id="response" class=".response"></div>
