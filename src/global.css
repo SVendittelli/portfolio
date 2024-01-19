@@ -34,3 +34,11 @@
   margin-bottom: 1lh;
   font-weight: 700;
 }
+
+.response p {
+  margin-bottom: 1lh;
+}
+
+.response a {
+  color: #8be9fd;
+}

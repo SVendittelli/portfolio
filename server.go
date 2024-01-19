@@ -20,9 +20,9 @@ func main() {
 
 	app.Get("/", func(c *fiber.Ctx) error {
 		// Render index
-		return c.Render("index.html", fiber.Map{
+		return c.Render("index", fiber.Map{
 			"Page": "~",
-		})
+		}, "layout")
 	})
 
 	log.Fatal(app.Listen(":3000"))
